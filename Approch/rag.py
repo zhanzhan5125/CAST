@@ -15,10 +15,8 @@ def create_db_langchain(language):
     # 初始化嵌入模型
     embedding_model = OpenAIEmbeddings(
         model="text-embedding-3-large",
-        # api_key='sk-8j35NBb9vpfA1kU2QnWWLMitH6bTbi2VjMzZnWFxKbUoYW9V',
-        # base_url="https://api.agicto.cn/v1",
-        api_key='sk-ASEYrFoHwCdfmCJa67CfA6C2E9F0446b97Bd1103Fd7c1aE7',
-        base_url="https://api.mjdjourney.cn/v1",
+        api_key='',
+        base_url=",
     )
     # 使用 LangChain 的 Chroma 集成自动处理嵌入和存储
     vector_db = Chroma(
@@ -108,10 +106,8 @@ class CodeRetriever:
         # 初始化数据库连接
         self.embedding_model = OpenAIEmbeddings(
             model="text-embedding-3-large",
-            # api_key='sk-8j35NBb9vpfA1kU2QnWWLMitH6bTbi2VjMzZnWFxKbUoYW9V',
-            # base_url="https://api.agicto.cn/v1",
-            api_key='sk-ASEYrFoHwCdfmCJa67CfA6C2E9F0446b97Bd1103Fd7c1aE7',
-            base_url="https://api.mjdjourney.cn/v1",
+            api_key='',
+            base_url="",
             # timeout=30
         )
 

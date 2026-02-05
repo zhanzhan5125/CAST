@@ -20,10 +20,8 @@ def llm_score(code, comment, model, prompt_file, s_min=1, s_max=10, weight=False
     if model == 'claude-3.7':
         llm = ChatAnthropic(
             model="claude-3-7-sonnet-20250219",
-            api_key='sk-ASEYrFoHwCdfmCJa67CfA6C2E9F0446b97Bd1103Fd7c1aE7',
-            # api_key = "sk-8j35NBb9vpfA1kU2QnWWLMitH6bTbi2VjMzZnWFxKbUoYW9V",
-            # base_url="https://api.agicto.cn/v1",
-            base_url="https://api.mjdjourney.cn",
+            api_key='',
+            base_url="",
             temperature=temperature,
             top_p=top_p,
         )
@@ -32,10 +30,8 @@ def llm_score(code, comment, model, prompt_file, s_min=1, s_max=10, weight=False
             model = 'o3-mini-2025-01-31'
         llm = ChatOpenAI(model=model,
                          timeout=30,
-                         api_key='sk-r5IQlRhuLFE5n5J7UVjNdqsYuFd83LHZQAPAMPXrANJApt6v',
-                         base_url="https://xiaoai.plus/v1",
-                         # api_key='sk-SpJc0amV97jp7BCK6aDd27Dd39D249529b28Ec8b70Ab9294',
-                         # base_url="https://api.mjdjourney.cn/v1",
+                         api_key='',
+                         base_url="",
                          temperature=temperature,
                          top_p=top_p,
                          logprobs=True,

@@ -127,12 +127,8 @@ class LLM:
             self.model_name = 'gpt-4o'
 
         llm = ChatOpenAI(model=self.model_name,
-                         # api_key='sk-8j35NBb9vpfA1kU2QnWWLMitH6bTbi2VjMzZnWFxKbUoYW9V',
-                         # base_url="https://api.agicto.cn/v1",
-                         api_key='sk-SpJc0amV97jp7BCK6aDd27Dd39D249529b28Ec8b70Ab9294',
-                         base_url="https://api.mjdjourney.cn/v1",
-                         # api_key='sk-UFaswAeaNrZTadFgf3rTOWg0veOmWZ5T180CPLTILwjvgnXV',
-                         # base_url="https://xiaoai.plus/v1",
+                         api_key='',
+                         base_url="",
                          temperature=self.temperature,
                          top_p=self.top_p,
                          # timeout=30,
@@ -142,13 +138,11 @@ class LLM:
 
     def claude(self):
         self.model_name = "claude-3-7-sonnet-20250219"
-        # self.api_key = 'sk-8j35NBb9vpfA1kU2QnWWLMitH6bTbi2VjMzZnWFxKbUoYW9V'
-        self.api_key = 'sk-ASEYrFoHwCdfmCJa67CfA6C2E9F0446b97Bd1103Fd7c1aE7'
+        self.api_key = ''
         llm = ChatAnthropic(
             model=self.model_name,
             api_key=self.api_key,
-            # base_url="https://api.agicto.cn/v1",
-            base_url="https://api.mjdjourney.cn",
+            base_url="",
             temperature=self.temperature,
             top_p=self.top_p,
         )
