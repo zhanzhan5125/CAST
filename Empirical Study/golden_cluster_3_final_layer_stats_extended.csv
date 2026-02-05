@@ -1,0 +1,5 @@
+Layer,Avg_Intensity,Avg_Attn_Share,Avg_Count_Share,Gain_Factor
+Interface,2.186,0.4896,0.3101,1.58
+Control,0.6017,0.1508,0.2424,0.62
+Data,0.7786,0.1234,0.1647,0.75
+API,0.8465,0.2363,0.2827,0.84
